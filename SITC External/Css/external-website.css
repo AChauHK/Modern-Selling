@@ -1,0 +1,464 @@
+/************ nav *********************/
+/************ nav *********************/
+/************ down arrow *********************/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@-webkit-keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+/************ down arrow *********************/
+body {
+  font-family: 'Open Sans',"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+.heading-underline {
+  background-color: #ed6e1e;
+  margin: 15px 0;
+  width: 150px;
+  height: 5px;
+}
+
+.orange-text {
+  color: #ed6e1e;
+}
+
+.blue-text {
+  color: #1E6FC1;
+}
+
+.world-bg {
+  background-image: url(../Images/touching-earth.png);
+  background-size: cover;
+  background-position-x: left;
+}
+
+.off-white-bg {
+  background-color: #f9f9ff;
+}
+
+.client-logo img {
+  max-width: 100px;
+}
+
+.background {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.background:first-of-type {
+  background-color: #081D36;
+  background-image: url(../Images/dna-bg.svg);
+  background-size: cover;
+}
+
+.background:first-of-type:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.background:nth-of-type(2) {
+  background-color: #FF9E5E;
+}
+
+.background:nth-of-type(4) {
+  background-color: #F8F9FA;
+}
+
+.background .scroll-arrow {
+  font-size: 70px;
+  cursor: pointer;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.background.up-scroll {
+  -webkit-transform: translate3d(0, -15vh, 0);
+          transform: translate3d(0, -15vh, 0);
+}
+
+.background.up-scroll .content-wrapper {
+  -webkit-transform: translateY(15vh);
+          transform: translateY(15vh);
+}
+
+.background.up-scroll + .background {
+  -webkit-transform: translate3d(0, 30vh, 0);
+          transform: translate3d(0, 30vh, 0);
+}
+
+.background.up-scroll + .background .content-wrapper {
+  -webkit-transform: translateY(30vh);
+          transform: translateY(30vh);
+}
+
+.background.down-scroll {
+  -webkit-transform: translate3d(0, -130vh, 0);
+          transform: translate3d(0, -130vh, 0);
+}
+
+.background.down-scroll .content-wrapper {
+  -webkit-transform: translateY(40vh);
+          transform: translateY(40vh);
+}
+
+.background.down-scroll + .background:not(.down-scroll) {
+  -webkit-transform: translate3d(0, -15vh, 0);
+          transform: translate3d(0, -15vh, 0);
+}
+
+.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
+  -webkit-transform: translateY(15vh);
+          transform: translateY(15vh);
+}
+
+.line-scroll {
+  position: fixed;
+  height: 100vh;
+  fill: none;
+  stroke: #EC6A2B;
+  stroke-width: 13px;
+}
+
+.bg-rotate {
+  -webkit-animation: rotation 160s infinite linear;
+          animation: rotation 160s infinite linear;
+  opacity: .1;
+  position: absolute;
+  width: 1000px;
+}
+
+.bg-rotate.rotate-1 {
+  bottom: -500px;
+}
+
+.bg-rotate.rotate-2 {
+  top: -500px;
+  right: 0;
+}
+
+.bg-arrow {
+  opacity: .1;
+  position: absolute;
+  width: 1000px;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+.dotted {
+  background-image: url(../Images/dotted-bg.svg);
+}
+
+.section-vertical {
+  min-height: 100vh;
+  position: relative;
+}
+
+.mobile .word-bg {
+  font-size: 220px;
+  font-weight: 900;
+  color: #ed6e1e;
+  opacity: 0.05;
+  top: -120px;
+  left: -40px;
+  z-index: -1;
+}
+
+.mobile .btn {
+  text-transform: uppercase;
+  background-color: #ed6e1e;
+  border: #ed6e1e;
+}
+
+.block-list {
+  white-space: nowrap;
+}
+
+.block-list .block-list-item {
+  width: 400px;
+  display: inline-block;
+  white-space: normal;
+  padding-right: 80px;
+  position: relative;
+}
+
+.block-list .block-list-item .block-list-item-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.block-list .block-list-item .block-list-item-inner .word-bg {
+  font-size: 350px;
+  font-weight: 900;
+  color: #ed6e1e;
+  opacity: 0.05;
+  top: -300px;
+  left: -100px;
+  z-index: -1;
+}
+
+.block-list .block-list-item .block-list-item-inner .btn {
+  background-color: #ed6e1e;
+  border: #ed6e1e;
+  text-transform: uppercase;
+}
+
+.block-list .block-list-item.odd-block {
+  min-height: 70vh;
+  vertical-align: bottom !important;
+}
+
+.block-list .block-list-item.odd-block .word-bg {
+  left: -150px;
+}
+
+.list-group-item:last-child {
+  min-height: auto;
+}
+
+.third {
+  background-color: #F8F9FA;
+  background-image: url(../Images/become-modern-seller-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 100px 20px;
+}
+
+.join-section .orange-text {
+  text-align: center;
+}
+
+.scrollend {
+  -webkit-transform: translateX(-1500px);
+          transform: translateX(-1500px);
+}
+
+@media (min-width: 992px) {
+  .world-bg {
+    background-position-x: center;
+  }
+  .list-group-item:last-child {
+    min-height: 380px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .desktop {
+    display: block;
+  }
+  .section-vertical {
+    padding: 200px 300px;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block-list .block-list-item {
+    width: 430px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .block-list .block-list-item {
+    width: 500px;
+  }
+}
+
+/***************** CSS FOR IE 10 AND 11 ***********************/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .desktop-section {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobile .word-bg {
+    top: -160px;
+  }
+  .background {
+    min-height: auto;
+  }
+  .row {
+    padding: 100px 20px;
+  }
+  .blocks-mobile .mb-5 {
+    padding-bottom: 100px;
+  }
+}
+
+.b2b-banner {
+  background-image: url(../Images/b2b/b2b-banner.jpg);
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .join-section {
+    background-image: url(../Images/b2b/join-us-bg-small.jpg);
+    background-size: contain;
+    background-position-x: left;
+    background-repeat: no-repeat;
+  }
+  .join-section .orange-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .join-section {
+    background-image: url(../Images/b2b/join-us-bg.png);
+    background-size: contain;
+    background-position-x: left;
+    background-repeat: no-repeat;
+  }
+  .join-section .orange-text {
+    text-align: left;
+  }
+}
+
+.card-head {
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.card-1 {
+  background-image: url(../Images/b2b/01-self-service.jpg);
+}
+
+.card-2 {
+  background-image: url(../Images/b2b/03-self-education.jpg);
+}
+
+.card-3 {
+  background-image: url(../Images/b2b/04-personalisation.jpg);
+}
+
+.card-4 {
+  background-image: url(../Images/b2b/06-automation.jpg);
+}
+
+.card-5 {
+  background-image: url(../Images/b2b/02-collaboration.jpg);
+}
+
+.card-6 {
+  background-image: url(../Images/b2b/07-Insight.jpg);
+}
+
+.card-7 {
+  background-image: url(../Images/b2b/05-transparency.jpg);
+}
+
+.platform-img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.platform-1 {
+  background-color: #ed6e1e;
+}
+
+.platform-2 {
+  background-color: #14487c;
+}
+
+.platform-3 {
+  background-color: #6C757D;
+}
+
+.modal-button {
+  margin-bottom: 20px;
+  text-align: left;
+  display: block;
+}
+
+#modal-image {
+  max-height: 300px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+/*# sourceMappingURL=external-website.css.map */

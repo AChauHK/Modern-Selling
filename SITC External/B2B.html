@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="Css/sitc_nav_footer/sass/2019_sitc_nav_footer.css" rel="stylesheet"/>
+        <link href="Css/external-website.css" rel="stylesheet"/>
+        <link href="Css/2019_custom.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+        <!-- Bootstrap javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="Scripts/jquery-ui-1.12.1.js"></script>
+        <script src="Scripts/jquery.browser.js"></script>
+        <script src="Scripts/jquery.hoverIntent.minified.js"></script>
+        <script src="Scripts/superfish.js"></script>
+        <script src="Scripts/supersubs.js"></script>
+        <script src="Scripts/modal.js"></script>
+          
+    
+        <title>B2B Ecommerce Platform</title>
+    </head>
+  <body>
+
+    
+    <div id="body-content">
+        <header class="nav-header w-100">
+                <nav class="top-nav d-flex flex-justify-content-space-between">
+                        <form class="mobile-search-container" action="//llamaswill.tumblr.com/search">
+                            <input id="search-box" type="text" class="search-box" name="q" />
+                            <label for="search-box"><i class="material-icons search-icon">search</i></label>
+                            <input type="submit" id="search-submit" />
+                            </form>
+                    <script>
+                    document.addEventListener("touchstart", function(){}, true);
+                    </script>
+                    <a href="#" class="header-logo flex-align-items-center" id="header-logo"></a>
+                    <script>
+                            $("#search-box").on("focus", function () {
+                    $('#header-logo').addClass('hide');
+                    });
+        
+                    $("#search-box").on("blur", function () {
+                        $('#header-logo').removeClass('hide');
+                    });
+                    </script>                     
+                    <div class="search-container d-flex">
+                            <ul id="top_head_mainnav" class="sf-js-enabled sf-shadow">
+                                    <li class="">
+                                        <a class="filter-button button rounded" href="#">Browse</a>
+                                        <ul class="filter-dropdown" style="visibility: hidden; display: none;">
+                                                <li class="filter-dropdown-container">
+                                                    <a class="filter-dropdown-title d-flex" href="#">Categories<i class="material-icons">keyboard_arrow_right</i></a>
+                                                    <ul style="display: none; visibility: hidden;" class="filter-dropdown-list filter-dropdown-list-1">
+                                                        <li><a href="#" class="view-all">View All Categories<i class="material-icons">play_arrow</i></a></li>
+                                                        <li><a href="#">Notebooks</a></li>
+                                                        <li><a href="#">Toner Cartridges</a></li>
+                                                        <li><a href="#">Computer Monitors</a></li>
+                                                        <li><a href="#">PCs/Workstations</a></li>
+                                                        <li><a href="#">Ink Cartridges</a></li>
+                                                        <li><a href="#">Network Switches</a></li>
+                                                        <li><a href="#">Tablets</a></li>
+                                                        <li><a href="#">Warranty & Support Extensions</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="filter-dropdown-container">
+                                                    <a class="filter-dropdown-title d-flex" href="#">Brands<i class="material-icons">keyboard_arrow_right</i></a>
+                                                    <ul style="display: none; visibility: hidden;" class="filter-dropdown-list filter-dropdown-list-2">
+                                                        <li><a href="#" class="view-all">View All Brands<i class="material-icons">play_arrow</i></a></li>
+                                                        <li><a href="#">5Star</a></li>
+                                                        <li><a href="#">Acer</a></li>
+                                                        <li><a href="#">Apple</a></li>
+                                                        <li><a href="#">ASUS</a></li>
+                                                        <li><a href="#">Diamond Lamps</a></li>
+                                                        <li><a href="#">Hewlett Packard Enterprise</a></li>
+                                                        <li><a href="#">HP</a></li>
+                                                        <li><a href="#">HTC</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="filter-dropdown-container">
+                                                    <a class="filter-dropdown-title d-flex" href="#">Distributors<i class="material-icons">keyboard_arrow_right</i></a>
+                                                    <ul style="display: none; visibility: hidden;" class="filter-dropdown-list filter-dropdown-list-3">
+                                                        <li><a href="#" class="view-all">View All Distributors<i class="material-icons">play_arrow</i></a></li>
+                                                        <li><a href="#">Exertis IT</a></li>
+                                                        <li><a href="#">Ingram Micro</a></li>
+                                                        <li><a href="#">Tech Data</a></li>
+                                                        <li><a href="#">Westcoast</a></li>
+                                                        <li><a href="#">Virtual Distribution Ltd</a></li>
+                                                        <li><a href="#">New Way International</a></li>
+                                                        <li><a href="#">Advent (Exertis Supplies)</a></li>
+                                                        <li><a href="#">Go2 Distribution (FKA DMC)</a></li>
+                                                    </ul>
+                                                </li>
+        
+                                        </ul>
+                                    </li>
+                            </ul>
+        
+                            <script>
+                                $(function () {
+                                    $('#top_head_mainnav').superfish({
+                                        autoArrows: false,
+                                        delay: 800,
+                                        speed: 100,
+                                        animation: { opacity: 'show', height: 'show' }
+                                    });
+                                });
+                            </script>
+                        <form class="d-flex" action="https://www.stockinthechannel.co.uk/Search">
+                            <input type="text" class="nav-search rounded-left" placeholder="Search over 6m products from 155 distributors">
+                            <button class="search-button button rounded-right" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <i id="side-nav-toggle" class="material-icons">menu</i>
+                    <script>
+                        $('#side-nav-toggle').click(function () {
+                            $('#slideout-nav').slideToggle({
+                        complete: function () {
+                            if ($('#slideout-nav').is(':hidden')) {
+                                        $('#slideout-nav').removeAttr('style');
+                            }
+                                }
+                            });
+                        });
+                    </script>
+                    <div class="search-dropdown" id="slideout-nav">
+                        <ul id="top_head_nav_ul">
+                            <li class="mobile"><a href="https://modernselling.stockinthechannel.co.uk/">Modern Selling</a></li>
+                            <li class="mobile">
+                                <a href="#" class="dropdown-icon">Services</a>
+                                <ul style="display: none; visibility: hidden;" class="account-list">
+                                    <li class="account-dropdown"><a href="#">B2B ecommerce platform</a></li>
+                                    <li class="account-dropdown"><a href="#">Register Free See Stock</a></li>
+                                    <li class="account-dropdown"><a href="#">B2B Price Comparison</a></li>
+                                    <li class="account-dropdown"><a href="#">Sell On Amazon</a></li>
+                                    <li class="account-dropdown"><a href="#">Webstores & Datafeeds B2C and B2G</a></li>
+                                    <li class="account-dropdown"><a href="#">Order Automation</a></li>
+                                    <li class="account-dropdown"><a href="#">Advertising</a></li>
+                                    <li class="account-dropdown"><a href="#">List Your Stock</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile"><a href="#">Distributors</a></li>
+                            <li class="mobile"><a href="#">About</a></li>
+                            <li class="mobile"><a href="#">Contact</a></li>
+                            <li class="mobile"><a href="#">Product Finder</a></li>
+                            <li class="login-link"><a href="https://accounts.stockinthechannel.co.uk/Account/Login">Login / Register</a></li>
+                            <script>
+                                $(function () {
+                                    $('#top_head_nav_ul').superfish({
+                                        autoArrows: false,
+                                        delay: 800,
+                                        speed: 100,
+                                        animation: { opacity: 'show', height: 'show' }
+                                    });
+                                });
+                            </script>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="second_head" class="flex-align-items-center">
+                    <div class="second-nav-container d-flex flex-justify-content-space-between mx-auto">
+                        <ul class="second-container d-flex">
+                            <li class="d-block"><a class="second-nav-main-link" href="https://modernselling.stockinthechannel.co.uk/">Modern Selling</a></li>
+                            <li class="d-block droppable">
+                                    <a class="second-nav-main-link dropdown-icon" href="#">Services</a>
+                                    <div class="megamenu py-5">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4 border-right">
+                                                    <h2>B2B ecommerce platform</h2>
+                                                    <div class="row desktop">
+                                                        <div class="col-lg-6">
+                                                            <img src="Images/59-graph.svg">
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <p>59% of B2B buyers prefer not to interact with humans via phone.</p>
+                                                            <p>A new, more connected and efficient world awaits you.</p>
+                                                        </div>
+                                                    </div>
+                                                    <button class="button orange-button mt-4 auto-width inline-link">Learn More</button>
+                                                </div>
+                                                <div class="col-md-4 border-right">
+                                                    <h2>Other services</h2>
+                                                    <a href="#" class="py-2">Register Free See Stock</a>
+                                                    <a href="#" class="py-2">B2B Price Comparison</a>
+                                                    <a href="#" class="py-2">Sell On Amazon</a>
+                                                    <a href="#" class="py-2">Webstores & Datafeeds B2C and B2G</a>
+                                                    <a href="#" class="py-2">Order Automation</a>
+                                                    <a href="#" class="py-2">Advertising</a>
+                                                    <a href="#" class="py-2">List Your Stock</a>
+                                                </div>
+                                                <div class="col-md-4 d-flex desktop"><a href="#"><img class="w-100 my-auto d-block" src="Images/nav-banner.jpg"></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="d-block"><a class="second-nav-main-link" href="#">Distributors</a></li>
+                            <li class="d-block droppable position-relative">
+                                <a class="second-nav-main-link dropdown-icon" href="#">About</a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a>History</a></li>
+                                        <li><a>Meet the team</a></li>
+                                        <li><a>Testimonials</a></li>
+                                        <li><a>Careers</a></li>
+                                        <li><a>Partners</a></li>
+                                        <li><a>Terms &amp; Conditions</a></li>
+                                        <li><a>Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="d-block"><a class="second-nav-main-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </header>
+
+        <section class="b2b-banner">
+            <div class="container">
+                <div class="row py-lg-5">
+                    <div class="col py-5">
+                        <h2 class="text-white text-uppercase font-weight-bold">B2B platform powering commerce in the digital economy</h2>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-md-4 mb-3">
+                            <img src="Images/b2b/platform-1.svg" class="rounded-circle p-3 platform-1 platform-img">
+                            <div class="">
+                              <h5 class="text-center blue-text">Built For IT resellers, VARs and MSPS</h5>
+                              <p class="text-center">After more than 10 years working with the IT industry we know what you need to improve your business and have developed an ideal solution.</p>
+                            </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                            <img src="Images/b2b/platform-2.svg" class="rounded-circle p-3 platform-2 platform-img">
+                            <div class="">
+                              <h5 class="text-center blue-text">Empower Your Sales Teams</h5>
+                              <p class="text-center">Give your sales team the time and insights it needs to develop winning strategies by eliminating manual tasks and giving them access to real-time customer data.</p>
+                            </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                            <img src="Images/b2b/platform-3.svg" class="rounded-circle p-3 platform-3 platform-img">
+                            <div class="">
+                              <h5 class="text-center blue-text">Fully Connected - Fully Automated</h5>
+                              <p class="text-center">Linked to all of your system plus those of your suppliers and even customers. Helps your business communicate and grow.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="off-white-bg">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="orange-text">Modern Selling Feature List</h3>
+                    </div>
+                </div>
+                <div class="row py-md-3">
+                    <div class="col-xl-3 col-lg-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-head card-1">
+                                <h5 class="my-5 text-center text-white">Self Service</h5>>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Digital natives and millennials don’t like talking on the phone. They want and expect to be able to perform routine tasks themselves, whilst interacting with as few people as possible.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item"></li>
+                            <li class="list-group-item">
+                                <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Order Status and Tracking" data-content1="Automatically updates order status and tracking by EDI links to distributors. You and your Customer know where their orders are." data-content2="Allowing you to recognise issues early and plan / take action for arrival, giving better account management and freeing up sales people’s time, gives your business the professional touch – loyalty admiration thus increased spend." data-image="1.png">Order Status and Tracking</button>
+                                <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="360 account view" data-content1="Links to your systems to show invoices, payments, credits, credit limit, returns and statements. Gives your customers 24/7 access to information they need." data-content2="Saves time on routine tasks, but more than that gets you paid more quickly as the customer know what they owe." data-image="2.png">360 account view</button>
+                                <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Account management" data-content1="Authorised customers are able to enter and maintain their billing, address, delivery details and payment preferences bidirectionally synched with your systems. Allowing them to maintain and manage their account." data-content2="Ensuring you have accurate data and saving time in account maintenance. No more missed payments or deliveries to old addresses and reduced fraud – reducing losses and adding to your bottom line." data-image="3.png">Account management</button>
+                                <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Purchase authorisation and approval" data-content1="Controls who has permission to buy and gives an approval process for orders- both internal and external – covering budgetary, product and technical approval. Making sure the right products are ordered." data-content2="Allows your customer to order with their own organisational controls in place. Resulting in less returns and more upsell opportunities, forcing technical review of complex orders to increase amount spent." data-image="4.png">Purchase authorisation and approval</button>
+                                <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Built in Heldesk" data-content1="Use our proprietary helpdesk or use our pre-built links to your existing system to embed this within your portal. An integrated helpdesk makes your portal a one stop shop for answers." data-content2="Customers questions are answered quickly and easily within your custom environment. Drawing them in to your portal and the interaction with your marketing messages will result in more sales." data-image="5.png">Built-in Helpdesk</button>    
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-head card-2">
+                                <h5 class="my-5 text-center text-white">Self Education</h5>>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Let them find out about your solutions on their terms. Expose price information early in the journey.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"></li>
+                                <li class="list-group-item">
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Guided selling module (CPQ)" data-content1="Easily create configuration wizards. Helps your customers and sales people decide what to buy when needs are complex." data-content2="Ensures the right products / services for the job to be done are included, enabling less skilled salespeople and customers to specify more complex requirements. This reduces training for salespeople and increases order size." data-image="6.png">Guided selling module (CPQ)</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Bundles" data-content1="Group a collection of products and services together. Makes it easy to order a large number of items without missing key components." data-content2="Saves time for buyers. This locks customers in to your company and allows for higher margins as direct price comparison is more difficult." data-image="7.png">Bundles</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Configurators" data-content1="Include wide range of product configurators, from ink and toner, through to system RAM, cables, network connectivity and even your own. Allows the customer to find compatible products easily." data-content2="This ensures the right products are ordered, resulting in fewer costly returns and less time spent checking compatibility." data-image="8.png">Configurators</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Full product descriptions provided" data-content1="Over 1.4m product descriptions matching IT products sold by distribution with long descriptions and multiple images and resources. This lets the customer know exactly what they are buying." data-content2="You no longer have to compile product descriptions yourself. Your customers will be able to find the detail they need and thus have the ability to place orders with confidence." data-image="9.png">Full product descriptions provided</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Great free text search" data-content1="Elastic search, BI and AI make finding things so easy. Your customers can simply type in what they want without having to look around." data-content2="Your top selling and promoted products are prioritised – you benefit from the whole channels search analysis. Your customers will keep coming back as your site is Amazon easy." data-image="10.png">Great free text search</button>      
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-head card-3">
+                                <h5 class="my-5 text-center text-white">Personalisation</h5>>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">To deliver a great experience, businesses must offer a unique, personalized journey by using their understanding of customers.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"></li>
+                                <li class="list-group-item">
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Custom Catalogues and products / services - even entire sites" data-content1="Let customers only see a curated catalogue of products they have agreed to buy from you at agreed prices and from optimal suppliers. Allows procurement policies necessary to be within your business relationship online." data-content2="Allows the site to be accessed by a wider group of people within your customer as appropriate controls are in place. Fundamentally this will win business as you support and define your customers IT needs." data-image="11.png">Custom Catalogues and products / services</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Personalised buying lists" data-content1="Create lists of key products for your customers or let them create their own requisition pads. Users can buy regular items quickly." data-content2="Items won’t be forgotten. This means you will sell more of your run rate products and bundles." data-image="12.png">Personalised buying lists</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Product recommendations" data-content1="Lists of alternative or complementary products are automatically generated. Let customers see what other items they need from our recommendation engine." data-content2="Your customers will get all they need to complete their project. Sales will increase at high margin by getting additional items added to the order." data-image="13.png">Product recommendations</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Personalised Messaging & segmentation – not ready" data-content1="Communicate online directly to individuals and groups based on buying habits or opportunities your salespeople have identified. Unite offline and online messages. Trigger and identify sales opportunities on your web site." data-content2="Customer will appreciate having relevant suggestions and funnels, and an improved experience. Your team will identify and grow any sales opportunities" data-image="14.png">Personalised Messaging & segmentation</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Customer specific pricing" data-content1="Display uniform prices across all channels to your customers – setting the margins you agree, based on gov/ed cost prices too. ~The prices you agree with your customers will be accurate and consistent." data-content2="Sell to your customers at the right price level. Maximise margins and minimise cost prices resulting in greater profit." data-image="15.png">Customer-specific pricing</button>      
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-head card-4">
+                                <h5 class="my-5 text-center text-white">Automation</h5>>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Make key people more efficient, remove repetitive tasks, communicate electronically with your suppliers, automate service provision and delivery.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"></li>
+                                <li class="list-group-item">
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Automate hardware procurement" data-content1="Electronic connections to distribution enable orders to be sent, order status and tracking to be interrogated and product serial numbers and other information to flow through to you and your customers. Reliable, accurate and instant bidirectional flow of information with your suppliers means you will be up to date in real time on any issues." data-content2="Save time and money processing orders – with fewer mistakes. A complete record of all your orders – plus serial numbers keeps customers happy, allows proactive action on delay and gets all key information recorded in your systems." data-image="16.png">Automate hardware procurement</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Automate Services billing" data-content1="Get billing reports from cloud software sales broken down by customer and imported straight into your systems. Saves time on billing administration." data-content2="Gives you and your customers complete access to the costs and breakdowns of cloud services. Allows you to reconcile and manage usage so saving money where services are not being used to their full extent." data-image="17.png">Automate Services Billing</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="ERP & CRM Integration - save rekeying" data-content1="Our integration platform allows links from one system to another passing through our middleware. Links PSA, CRM, ERP and suppliers giving a 360 view of business activity." data-content2="Up to date information in all your systems without spending time allows your business to work more effectively. By having access everywhere you will be easily and effectively able to solve any issues and communicate this information to your customers." data-image="18.png">ERP & CRM Integration - save rekeying</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Punchout" data-content1="Link to your customers procurement systems such as Ariba, SAP and Oracle. This is a requirement for many of your key customers." data-content2="By allowing punch out – rather than free text orders or catalogue upload you can market to your customers. Once the customer is on your punch out site he can only buy your products – making you a one stop shop." data-image="19.png">Punchout to your customers purchasing portals</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Real-time stock and prices from distribution" data-content1="Connected to over 500 suppliers globally – our system gets real time stock and prices from suppliers systems. This allows you to reliably quote and accept orders." data-content2="Pricing is specific to your account and customer so you will minimise the price paid as well as comparing the market. This will improve your margins, save time and increase reliability." data-image="20.png">Real-time stock and prices from distribution</button>      
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-head card-5">
+                                <h5 class="my-5 text-center text-white">Collaboration</h5>>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Sales as a side-by-side process, instead of head-on.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"></li>
+                                <li class="list-group-item">
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Collaborative quoting & RF" data-content1="Offline quotes synchronised to your online portal, customers create their own RFQs online. Shared access to an online areas to view and collaborate on quotes." data-content2="Ensures the right products / services for the job to be done are included, enabling less skilled salespeople and customers to specify more complex requirements. This reduces training for salespeople and increases order size." data-image="21.png">Collaborative quoting & RFQ</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Embedded Chat - plus voice & video" data-content1="Move from a web page to chat, voice or even video instantly .Get the right person notified when key customers are taking specified actions so they can step in to proactively help." data-content2="Solve buyers issues upfront and provide proactrive support when needed. Spot and close sales opportunities." data-image="22.png">Embedded Chat - plus voice & video</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Shared space – group involvement" data-content1="Involve multiple constituents in the sales process from your team and the customer side. Gets everyone involved and committed to the outcome." data-content2="Less project reworking and quicker approval. Projects are delivered more reliably." data-image="23.png">Shared space – group involvement</button>      
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-head card-6">
+                                <h5 class="my-5 text-center text-white">Insight</h5>>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Using data analysis to spot patterns, opportunities or problems.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"></li>
+                                <li class="list-group-item">
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="End user reporting suite" data-content1="Let’s your customers analyse their spend. Your customers will know what they have bought from you and can use this information in their business expense reports inc UNSPSC." data-content2="Your company is now supporting your customers purchasing controls and business reporting needs. This will encourage them to consolidate spend with you." data-image="24.png">End-user reporting suite</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Internal tools to report on your your business goals" data-content1="A huge range of reports showing details of sales, returns, customer analysis and growth. Allows you to know in real time hwo your business is performing." data-content2="Lets you take action to address issues such as high return rates for key products. Opens up opportunity detection by letting salespeople see what their customers are looking for and thus sell in to them." data-image="25.png">Internal tools to report on your business goals</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Opportunity Detection" data-content1="Tools to drive sales growth with your existing customers. Report on customer activity to spot buying signals or potential loss of business." data-content2="Your sales team can now quickly determine how to invest their time to build relationships. You will identify hidden value in your customer base." data-image="26.png">Opportunity detection</button>  
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Optimize the conversion funnel" data-content1="Reduce abandoned carts with proven best practices, including emailing abandoned carts, creating leads for sales people, and payment alternatives. This helps to close more sales." data-content2="A higher percentage of customers complete the buying process. This fundamentally adds to your bottom line." data-image="27.png">Optimize the conversion funnel</button>    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 mb-3">
+                        <div class="card h-100">
+                            <div class="card-head card-7">
+                                <h5 class="my-5 text-center text-white">Transparency</h5>>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Above everything, build trust with consistent pricing and messages through all channels.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"></li>
+                                <li class="list-group-item">
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Access to uniform prices and price history" data-content1="Customer specific Prices calculated automatically from suppliers stock with visibility of previous price paid. Consistently price your products and maintain margin." data-content2="Customers trust your pricing policy, hence they will engage more with your business and buy more – even at higher margins." data-image="28.png">Access to uniform prices and price history</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="All billing information at fingertips" data-content1="Customers know what you have charged them. Easily answer customer billing queries." data-content2="Remove routine tasks and improve customer service. Debtors days will decrease and the customer knows the status of all his bills." data-image="29.png">All billing information at fingertips</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Exposing all the product information" data-content1="Product information provided, inc images, categories, UNSPSC.and much more – for over 2m products. Customers become fully aware of what they are purchasing." data-content2="You don’t have to maintain product descriptions or compile your own lists. This is essential for customers to be able to buy from you and will enable online and offline sales." data-image="30.png">Exposing all the product information</button>
+                                    <button type="button" class="button-link modal-button text-capitalize" data-toggle="modal" data-target="#featureModal" data-heading="Sharing solution sales together" data-content1="Let customers see the status of their project and orders with one unified workspace to deal with project and order related issues. Allows a complete overview in one place." data-content2="Things won’t be overlooked, and delivery will be ensured. The customer is involved in the project and this committed to it and to your service, enhancing loyalty and trust in the relationship." data-image="31.png">Sharing solution sales together</button>      
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col mb-3">
+                        <h3 class="orange-text">Grow Your B2B Ecommerce Business Quickly And Easily</h3>
+                        <p>Full service or involve your team in all set up processes including design and build, system integration, hosting and deployment.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 border-0">
+                            <img src="Images/b2b/hit-market.png" class="rounded-top">
+                            <div class="card-body off-white-bg rounded-bottom">
+                              <h5 class="card-title">Hit The Market Fast</h5>
+                              <p class="card-text">Launch in record time and start generating revenue sooner with the fastest B2B ecommerce implementation on the market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 border-0">
+                            <img src="Images/b2b/Innovate-quickly.png" class="rounded-top">
+                            <div class="card-body off-white-bg rounded-bottom">
+                              <h5 class="card-title">Innovate Quickly</h5>
+                              <p class="card-text">A huge range of additional plugins available to achieve virtually anything, Limitless options to  expand, develop and improve the site with your team, ours or third parties.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 border-0">
+                            <img src="Images/b2b/Make-Online-Work-For-Your-Business.png" class="rounded-top">
+                            <div class="card-body off-white-bg rounded-bottom">
+                              <h5 class="card-title">Make Online Work For Your Business</h5>
+                              <p class="card-text">You must adapt to this massive change in the market if you are going to thrive in the future. We will help you embrace this new sales strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="off-white-bg py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h3 class="orange-text">Chairman Statement - Tony Meyers</h3>
+                        <p>“We earn our money via monthly fees not big upfront set up costs. To survive and thrive we must hold on to happy customers for the long term who profit from our services. Whether you join our customer community or not realise that your business needs to embrace at least some of the principles we have defined as Modern Selling.”</p>
+                        <a class="btn btn-primary orange-button" href="#" role="button">VOHKUS CASE STUDY</a>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <img src="Images/b2b/ceo-image.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="join-section">
+            <div class="container py-5">
+                <div class="row py-md-5 my-md-5">
+                    <div class="col-md-6 py-md-5 my-md-5"></div>
+                    <div class="col-md-6">
+                        <h2 class="orange-text">Join Our Modern Selling Community</h2>
+                        <a class="btn btn-primary mt-3 orange-button" href="#" role="button">Watch Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    
+    <footer class="footer">
+        <div class="d-flex flex-justify-content-space-between footer-top">
+            <div class="footer-logo-section px-4 pb-4">
+                <div><img src="Images/SITC-Logo-white.svg" class="d-block mx-auto"></div>
+                <div class="social-media-container mx-auto">
+                    <a href="https://accounts.stockinthechannel.co.uk/Account/Register" target="_blank" class="social-media-icon login">
+                        <span class="off-screen">
+                            Link to Stock in the Channel Register Page, opens in a new tab.
+                        </span>
+                    </a>
+                    <a href="https://twitter.com/stockinchannel" target="_blank" class="social-media-icon twitter">
+                        <span class="off-screen">
+                            Link to Stock in the Channel twitter Page, opens in a new tab.
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/stock-in-the-channel" target="_blank" class="social-media-icon linkedin">
+                        <span class="off-screen">
+                            Link to Stock in the Channel linkedin Page, opens in a new tab.
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-direction-column footer-contact mx-auto pb-4 px-4">
+                <p>Contact</p>
+                <div class="contact-link"><i class="material-icons"> phone</i><a href="tel:+443337720333" target="_blank">+44 333 772 0003</a></div>
+                <div class="contact-link"><i class="material-icons"> email</i><a href="mailto:sales@stockinthechannel.com" target="_blank">sales@stockinthechannel.com</a></div>
+                <div class="contact-link"><i class="material-icons"> apartment</i><a href="https://goo.gl/maps/8UW3zeyj5cN82qHw9" target="_blank">14 Heddon St, Mayfair, London W1B 4DA</a></div>
+            </div>
+        </div>
+        <div class="d-flex flex-align-items-center flex-justify-content-center footer-links px-4 pb-4">
+            <a href="#">Privacy</a>
+            <p class="desktop">|</p>
+            <a href="#">Ts & Cs</a>
+            <p class="desktop">|</p>
+            <a href="#"> Advertise</a>
+            <p class="desktop">|</p>
+            <a href="#">List your stock</a>
+            <p class="desktop">|</p>
+            <a href="#">Contact</a>
+            <p class="desktop">|</p>
+            <p>© 2019 Stock in the Channel All rights reserved</p>
+        </div>
+    </footer>
+        <!-- Bootstrap javascript -->
+        <div class="modal fade" id="featureModal" tabindex="-1" role="dialog" aria-labelledby="featureModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-capitalize">New message</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                      <div class="col-6">
+                          <p class="content-1 py-3"></p>
+                          <p class="content-2 pb-3"></p>
+                      </div>
+                      <div class="col-6">
+                        <img src="" id="modal-image" class="choosemodal-image img-fluid">
+                      </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  </body>
+</html>

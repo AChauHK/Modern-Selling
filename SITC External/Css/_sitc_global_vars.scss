@@ -1,0 +1,90 @@
+﻿$bodyMargin-minimal: 5px;
+$bodyMargin-narrow: 20px;
+$bodyMargin-standard: 5%;
+$bodyMargin-wide: 15%;
+$bodyMargin-wall-standard: 11%;
+$bodyMargin-wall-wide: 15%;
+
+$bodyHeader-topSize: 55px;
+$bodyHeader-topSecondSize: 35px;
+
+$tl: 0.6s;
+
+$color-white: #fff;
+$color-black: #000;
+$color-almostWhite: #f9f9ff;
+$color-almostWhite2: #f5f5ff;
+$color-redRegular: #ed6e1e;
+$color-redActivated: #ff6d00;
+$color-redFlat: #f87e3f;
+$color-redOff: #FFECE1;
+$color-linkHeader: #676771;
+$color-borderLight: #e3e3ed;
+$color-blackText: #3f3f49;
+$color-greyText: #75757f;
+$color-lightGreyText: #bdbdc7;
+$color-lightGreyBorder: #ccccd6;
+$color-errorDarkRed: #721C24;
+$color-errorLightRed: #F8D7DA;
+$color-background-grey: #f5f5f5;
+$color-link: #1E6FC1;
+$color-secondary: #081D36;
+$color-tertiary: #14487c;
+$color-quaternary: #6C757D;
+$color-lightBlue: #F5F9FE;
+$color-tooltipGrey: #a9a9b9;
+
+$bp-xsmall: 450px;
+$bp-small: 768px;
+$bp-medium: 992px;
+$bp-standard: 1050px;
+$bp-large: 1200px;
+$bp-xlarge: 1600px;
+
+$dim-card-padding: 18px;
+$dim-card-padding--narrow: 10px;
+$dim-layout-contentbar-margin: 10px;
+$dim-layout-sidebar-width: 180px;
+$dim-standard-margin: 5px;
+
+$dim-chart-height-large: 400px;
+$dim-chart-height-standard: 300px;
+$dim-chart-height-small: 200px;
+
+$dim-ellipsis-normal: 10em;
+
+$zindex-dialog: 1000;
+
+$font-size-materialicons-inline: 18px;
+$font-size-small: 11px;
+
+$cubic: cubic-bezier(.64,.09,.08,1);
+
+
+/************ nav *********************/
+
+/************ nav *********************/
+
+/************ down arrow *********************/
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+  /************ down arrow *********************/

@@ -1,0 +1,398 @@
+﻿@import 'sitc_global_vars';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+// ------------- MIXINS ------------- //
+@mixin transition($time, $property: all, $easing: ease-in) {
+    transition: $property $time $easing;
+}
+
+// ------------- VARIABLES ------------- //
+$parallax-offset: 30vh;
+$content-offset: 40vh;
+$transition-speed: 1.2s;
+$slide-number: 4;
+
+// ------------- GENERAL ------------- //
+
+body {
+  font-family: 'Open Sans',"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+img {
+  width:100%;
+}
+.desktop {
+  display: none;
+}
+.mobile {
+  display: block;
+}
+.heading-underline {
+  background-color: $color-redRegular;
+  margin: 15px 0;
+  width: 150px;
+  height: 5px;
+}
+.orange-text {
+  color: $color-redRegular;
+}
+.blue-text {
+  color: $color-link;
+}
+.world-bg {
+  background-image: url(../Images/touching-earth.png);
+  background-size: cover;
+  background-position-x: left;
+}
+.off-white-bg {
+  background-color: $color-almostWhite;
+}
+.client-logo {
+  img {
+    max-width: 100px;
+  }
+}
+// ------------- GENERAL ------------- //
+
+
+// ------------- SLIDE SCROLL ------------- //
+
+.background {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+
+  &:first-of-type {
+    background-color: $color-secondary;
+    background-image: url(../Images/dna-bg.svg);
+    background-size: cover;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      // height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,.3);
+    }
+  }
+  &:nth-of-type(2) {
+    background-color: #FF9E5E;
+  }
+  &:nth-of-type(4) {
+    background-color: #F8F9FA;
+  }
+  .scroll-arrow {
+    font-size: 70px;
+    cursor: pointer;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1);
+  }
+}
+
+// ------------- SET TRANSFORM VALUES ------------- //
+
+.background.up-scroll {
+  transform: translate3d(0,-$parallax-offset / 2,0);
+  .content-wrapper {
+    transform: translateY($parallax-offset / 2);
+  }
+  + .background {
+    transform: translate3d(0,$parallax-offset,0);
+      .content-wrapper {
+        transform: translateY($parallax-offset);
+      }
+    }
+}
+
+.background.down-scroll {
+  transform: translate3d(0,-(100vh + $parallax-offset),0);
+  .content-wrapper {
+    transform: translateY($content-offset);
+  }
+  + .background:not(.down-scroll) {
+    transform: translate3d(0,-$parallax-offset / 2,0);
+      .content-wrapper {
+        transform: translateY($parallax-offset / 2);
+      }
+  }
+}
+// ------------- SLIDE SCROLL ------------- //
+
+// ------------- IMAGE SCROLL ------------- //
+.line-scroll {
+  position: fixed;
+  height: 100vh;
+  fill: none;
+  stroke: #EC6A2B;
+  stroke-width: 13px;
+}
+// ------------- IMAGE SCROLL ------------- //
+
+.bg-rotate {
+  animation: rotation 160s infinite linear;
+  opacity: .1;
+  position: absolute;
+  width:1000px;
+  &.rotate-1 {
+    bottom: -500px;
+  }
+  &.rotate-2 {
+    top: -500px;
+    right: 0;
+  }
+}
+.bg-arrow {
+  opacity: .1;
+  position: absolute;
+  width:1000px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+// ------------- IMAGE SCROLL ------------- //
+
+// ------------- HORIZONTAL SCROLL ------------- //
+.dotted {
+  background-image: url(../Images/dotted-bg.svg);
+}
+.section-vertical {
+  min-height: 100vh;
+  position: relative;
+}
+.mobile {
+  .word-bg {
+    font-size: 220px;
+    font-weight: 900;
+    color: $color-redRegular;
+    opacity: 0.05;
+    top: -120px;
+    left: -40px;
+    z-index: -1;
+  }
+  .btn {
+    text-transform: uppercase;
+    background-color: $color-redRegular;
+    border: $color-redRegular;
+  }
+}
+.block-list {
+  white-space: nowrap;
+  .block-list-item {
+    width: 400px;
+    display: inline-block;
+    white-space: normal;
+    padding-right: 80px;
+    position: relative;
+    .block-list-item-inner {
+      width: 100%;
+      height: 100%;
+      .word-bg {
+        font-size: 350px;
+        font-weight: 900;
+        color: #ed6e1e;
+        opacity: 0.05;
+        top: -300px;
+        left: -100px;
+        z-index: -1;
+      }
+      .btn {
+        background-color: $color-redRegular;
+        border: $color-redRegular;
+        text-transform: uppercase;
+      }
+    }
+    &.odd-block {
+      min-height: 70vh;
+      vertical-align: bottom!important;
+      .word-bg {
+        left: -150px;
+      }
+    }
+  }
+}
+.list-group-item:last-child {
+  min-height: auto;
+}
+
+.third {
+  background-color: #F8F9FA;
+  background-image: url(../Images/become-modern-seller-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding:100px 20px;
+}
+
+.join-section {
+  .orange-text {
+    text-align: center;
+  }
+}
+
+.scrollend {
+  transform: translateX(-1500px);
+}
+// ------------- HORIZONTAL SCROLL ------------- //
+@media (min-width: $bp-medium) {
+  .world-bg {
+    background-position-x: center;
+  }
+  .list-group-item:last-child {
+    min-height: 380px;
+  }
+}
+@media (min-width: $bp-standard) {
+  .desktop {
+    display: block;
+  }
+  .section-vertical {
+    padding: 200px 300px;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $bp-large) {
+  .block-list .block-list-item {
+    width: 430px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: $bp-xlarge) {
+  .block-list .block-list-item {
+    width: 500px;
+  }
+}
+
+/***************** CSS FOR IE 10 AND 11 ***********************/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .desktop {
+    display: flex;
+  }
+  .desktop-section {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    .word-bg {
+      top:-160px;
+    }
+  }
+  .background {
+    min-height: auto;
+  }
+  .row {
+    padding: 100px 20px;
+  }
+  .blocks-mobile {
+    .mb-5 {
+      padding-bottom:100px;
+    }
+  }
+}
+
+
+
+.b2b-banner {
+  background-image: url(../Images/b2b/b2b-banner.jpg);
+  background-size: cover;
+}
+
+@media (min-width: $bp-small) {
+  .join-section {
+    background-image: url(../Images/b2b/join-us-bg-small.jpg);
+    background-size: contain;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    .orange-text {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: $bp-medium) {
+  .join-section {
+    background-image: url(../Images/b2b/join-us-bg.png);
+    background-size: contain;
+    background-position-x: left;
+    background-repeat: no-repeat;
+    .orange-text {
+      text-align: left;
+    }
+  }
+}
+
+// B2B Page
+
+.card-head {
+  background-size: cover;
+  padding:50px 0;
+}
+
+.card-1 {
+  background-image: url(../Images/b2b/01-self-service.jpg);
+}
+.card-2 {
+  background-image: url(../Images/b2b/03-self-education.jpg);
+}
+.card-3 {
+  background-image: url(../Images/b2b/04-personalisation.jpg);
+}
+.card-4 {
+  background-image: url(../Images/b2b/06-automation.jpg);
+}
+.card-5 {
+  background-image: url(../Images/b2b/02-collaboration.jpg);
+}
+.card-6 {
+  background-image: url(../Images/b2b/07-Insight.jpg);
+}
+.card-7 {
+  background-image: url(../Images/b2b/05-transparency.jpg);
+}
+
+.platform-img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.platform-1 {
+  background-color: $color-redRegular;
+}
+
+.platform-2 {
+  background-color: $color-tertiary;
+}
+
+.platform-3 {
+  background-color: $color-quaternary;
+}
+
+//modal
+
+.modal-button {
+  margin-bottom: 20px;
+  text-align: left;
+  display: block;
+}
+
+#modal-image {
+  max-height: 300px;
+  width: auto;
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="Css/sitc_nav_footer/sass/2019_sitc_nav_footer.css" rel="stylesheet"/>
+    <link href="Css/external-website.css" rel="stylesheet"/>
+    <link href="Css/2019_custom.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!-- <script src="Scripts/jquery-1.12.4.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="Scripts/jquery.browser.js"></script>
+    <script src="Scripts/jquery.hoverIntent.minified.js"></script>
+    <script src="Scripts/superfish.js"></script>
+    <script src="Scripts/supersubs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <!-- <script src="Scripts/full-page-parallax-scroll-effect.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+    <title>Modern Selling - Stock In The Channel</title>
+  </head>
+  <body>
+
+    
+    <div id="body-content">
+        <section class="background d-flex flex-direction-column">
+            <header class="nav-header w-100">
+                    <nav class="top-nav d-flex flex-justify-content-space-between">
+                            <form class="mobile-search-container" action="//llamaswill.tumblr.com/search">
+                                <input id="search-box" type="text" class="search-box" name="q" />
+                                <label for="search-box"><i class="material-icons search-icon">search</i></label>
+                                <input type="submit" id="search-submit" />
+                                </form>
+                        <script>
+                        document.addEventListener("touchstart", function(){}, true);
+                        </script>
+                        <a href="#" class="header-logo flex-align-items-center" id="header-logo"></a>
+                        <script>
+                                $("#search-box").on("focus", function () {
+                        $('#header-logo').addClass('hide');
+                        });
+            
+                        $("#search-box").on("blur", function () {
+                            $('#header-logo').removeClass('hide');
+                        });
+                        </script>                     
+                        <div class="search-container d-flex">
+                                <ul id="top_head_mainnav" class="sf-js-enabled sf-shadow">
+                                        <li class="">
+                                            <a class="filter-button button rounded" href="#">Browse</a>
+                                            <ul class="filter-dropdown" style="visibility: hidden; display: none;">
+                                                    <li class="filter-dropdown-container">
+                                                        <a class="filter-dropdown-title d-flex" href="#">Categories<i class="material-icons">keyboard_arrow_right</i></a>
+                                                        <ul style="display: none; visibility: hidden;" class="filter-dropdown-list filter-dropdown-list-1">
+                                                            <li><a href="#" class="view-all">View All Categories<i class="material-icons">play_arrow</i></a></li>
+                                                            <li><a href="#">Notebooks</a></li>
+                                                            <li><a href="#">Toner Cartridges</a></li>
+                                                            <li><a href="#">Computer Monitors</a></li>
+                                                            <li><a href="#">PCs/Workstations</a></li>
+                                                            <li><a href="#">Ink Cartridges</a></li>
+                                                            <li><a href="#">Network Switches</a></li>
+                                                            <li><a href="#">Tablets</a></li>
+                                                            <li><a href="#">Warranty & Support Extensions</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="filter-dropdown-container">
+                                                        <a class="filter-dropdown-title d-flex" href="#">Brands<i class="material-icons">keyboard_arrow_right</i></a>
+                                                        <ul style="display: none; visibility: hidden;" class="filter-dropdown-list filter-dropdown-list-2">
+                                                            <li><a href="#" class="view-all">View All Brands<i class="material-icons">play_arrow</i></a></li>
+                                                            <li><a href="#">5Star</a></li>
+                                                            <li><a href="#">Acer</a></li>
+                                                            <li><a href="#">Apple</a></li>
+                                                            <li><a href="#">ASUS</a></li>
+                                                            <li><a href="#">Diamond Lamps</a></li>
+                                                            <li><a href="#">Hewlett Packard Enterprise</a></li>
+                                                            <li><a href="#">HP</a></li>
+                                                            <li><a href="#">HTC</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="filter-dropdown-container">
+                                                        <a class="filter-dropdown-title d-flex" href="#">Distributors<i class="material-icons">keyboard_arrow_right</i></a>
+                                                        <ul style="display: none; visibility: hidden;" class="filter-dropdown-list filter-dropdown-list-3">
+                                                            <li><a href="#" class="view-all">View All Distributors<i class="material-icons">play_arrow</i></a></li>
+                                                            <li><a href="#">Exertis IT</a></li>
+                                                            <li><a href="#">Ingram Micro</a></li>
+                                                            <li><a href="#">Tech Data</a></li>
+                                                            <li><a href="#">Westcoast</a></li>
+                                                            <li><a href="#">Virtual Distribution Ltd</a></li>
+                                                            <li><a href="#">New Way International</a></li>
+                                                            <li><a href="#">Advent (Exertis Supplies)</a></li>
+                                                            <li><a href="#">Go2 Distribution (FKA DMC)</a></li>
+                                                        </ul>
+                                                    </li>
+            
+                                            </ul>
+                                        </li>
+                                </ul>
+            
+                                <script>
+                                    $(function () {
+                                        $('#top_head_mainnav').superfish({
+                                            autoArrows: false,
+                                            delay: 800,
+                                            speed: 100,
+                                            animation: { opacity: 'show', height: 'show' }
+                                        });
+                                    });
+                                </script>
+                            <form class="d-flex" action="https://www.stockinthechannel.co.uk/Search">
+                                <input type="text" class="nav-search rounded-left" placeholder="Search over 6m products from 155 distributors">
+                                <button class="search-button button rounded-right" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <i id="side-nav-toggle" class="material-icons">menu</i>
+                        <script>
+                            $('#side-nav-toggle').click(function () {
+                                $('#slideout-nav').slideToggle({
+                            complete: function () {
+                                if ($('#slideout-nav').is(':hidden')) {
+                                            $('#slideout-nav').removeAttr('style');
+                                }
+                                    }
+                                });
+                            });
+                        </script>
+                        <div class="search-dropdown" id="slideout-nav">
+                            <ul id="top_head_nav_ul">
+                                <li class="mobile"><a href="https://modernselling.stockinthechannel.co.uk/">Modern Selling</a></li>
+                                <li class="mobile">
+                                    <a href="#">Services<i class="material-icons">keyboard_arrow_down</i></a>
+                                    <ul style="display: none; visibility: hidden;" class="account-list">
+                                        <li class="account-dropdown"><a href="#">B2B ecommerce platform</a></li>
+                                        <li class="account-dropdown"><a href="#">Register Free See Stock</a></li>
+                                        <li class="account-dropdown"><a href="#">B2B Price Comparison</a></li>
+                                        <li class="account-dropdown"><a href="#">Sell On Amazon</a></li>
+                                        <li class="account-dropdown"><a href="#">Webstores & Datafeeds B2C and B2G</a></li>
+                                        <li class="account-dropdown"><a href="#">Order Automation</a></li>
+                                        <li class="account-dropdown"><a href="#">Advertising</a></li>
+                                        <li class="account-dropdown"><a href="#">List Your Stock</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mobile"><a href="#">Distributors</a></li>
+                                <li class="mobile"><a href="#">About</a></li>
+                                <li class="mobile"><a href="#">Contact</a></li>
+                                <li class="mobile"><a href="#">Product Finder</a></li>
+                                <li class="login-link"><a href="https://accounts.stockinthechannel.co.uk/Account/Login">Login / Register</a></li>
+                                <script>
+                                    $(function () {
+                                        $('#top_head_nav_ul').superfish({
+                                            autoArrows: false,
+                                            delay: 800,
+                                            speed: 100,
+                                            animation: { opacity: 'show', height: 'show' }
+                                        });
+                                    });
+                                </script>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div id="second_head" class="flex-align-items-center">
+                        <div class="second-nav-container d-flex flex-justify-content-space-between mx-auto">
+                            <ul class="second-container d-flex">
+                                <li class="d-block"><a class="second-nav-main-link" href="https://modernselling.stockinthechannel.co.uk/">Modern Selling</a></li>
+                                <li class="d-block droppable">
+                                        <a class="second-nav-main-link" href="#">
+                                            Services <i class="material-icons">keyboard_arrow_down</i>
+                                        </a>
+                                        <div class="megamenu py-5">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-4 border-right">
+                                                        <h2>B2B ecommerce platform</h2>
+                                                        <div class="row desktop">
+                                                            <div class="col-lg-6">
+                                                                <img src="Images/59-graph.svg">
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <p>59% of B2B buyers prefer not to interact with humans via phone.</p>
+                                                                <p>A new, more connected and efficient world awaits you.</p>
+                                                            </div>
+                                                        </div>
+                                                        <button class="button orange-button mt-4 auto-width inline-link">Learn More</button>
+                                                    </div>
+                                                    <div class="col-md-4 border-right">
+                                                        <h2>Other services</h2>
+                                                        <a href="#" class="py-2">Register Free See Stock</a>
+                                                        <a href="#" class="py-2">B2B Price Comparison</a>
+                                                        <a href="#" class="py-2">Sell On Amazon</a>
+                                                        <a href="#" class="py-2">Webstores & Datafeeds B2C and B2G</a>
+                                                        <a href="#" class="py-2">Order Automation</a>
+                                                        <a href="#" class="py-2">Advertising</a>
+                                                        <a href="#" class="py-2">List Your Stock</a>
+                                                    </div>
+                                                    <div class="col-md-4 d-flex desktop"><a href="#"><img class="w-100 my-auto d-block" src="Images/nav-banner.jpg"></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="d-block"><a class="second-nav-main-link" href="#">Distributors</a></li>
+                                <li class="d-block droppable position-relative">
+                                    <a class="second-nav-main-link" href="#"> About <i class="material-icons">keyboard_arrow_down</i></a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a>History</a></li>
+                                            <li><a>Meet the team</a></li>
+                                            <li><a>Testimonials</a></li>
+                                            <li><a>Careers</a></li>
+                                            <li><a>Partners</a></li>
+                                            <li><a>Terms &amp; Conditions</a></li>
+                                            <li><a>Privacy</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="d-block"><a class="second-nav-main-link" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            <div class="container my-auto">
+                <div class="row">
+                    <div class="col mb-5 pb-5 text-center text-white">
+                        <h1 class="text-uppercase">Modern Selling</h1>
+                        <h2 class="orange-text">The evolution of IT resellers</h2>
+                        <p >The dynamics of B2B sales has changed the way you have to sell and interact with your customers.</p>
+                        <p>Meet the powerful platform powering modern selling in the digital economy.</p>
+                        <i class="material-icons scroll-arrow">arrow_drop_down</i>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <section class="background d-flex flex-align-items-center video">
+            <div class="container">
+                <div class="row">
+                    <div class="col"><iframe class="mx-auto d-block" width="300" height="150" src="https://www.youtube.com/embed/oXiKRP1qADs?rel=0&enablejsapi=1" frameborder="0" ></iframe></div>   
+                </div>
+            </div>
+        </section>
+        <section class="background d-flex flex-align-items-center py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center w-100 wow fadeInRight" data-wow-duration="0.2s">
+                        <p>B2B buyers are <strong>increasingly digitally savvy</strong> and <strong>self-educated</strong>. They <strong>prefer to not interact</strong> with a salesperson when gathering product or service information, tracking deliveries and shipping times, and buying a product or service.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <svg version="1.1" id="Layer_1" class="percentage-graph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 142 145.5" style="enable-background:new 0 0 142 145.5;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:none;stroke:#000000;stroke-width:7;stroke-miterlimit:10;}
+                            .st1{fill:none;}
+                            .st2{font-family:'Lato-Regular';}
+                            .st3{font-size:25px;}
+                            .st4{fill:none;stroke:#EC6A2B;stroke-width:13;stroke-miterlimit:10;}
+                        </style>
+                        <ellipse class="st0" cx="67.5" cy="73.8" rx="49.4" ry="51.1"/>
+                        <rect x="14.6" y="15" class="st1" width="112.8" height="115.6"/>
+                        <text transform="matrix(1 0 0 1 42.5852 80.7317)" class="st2 st3">59%</text>
+                        <g>
+                            <g>
+                                <defs>
+                                    <rect id="SVGID_1_" x="14.6" y="15" width="112.8" height="115.6"/>
+                                </defs>
+                                <clipPath id="SVGID_2_">
+                                    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                </clipPath>
+                            </g>
+                        </g>
+                        <path class="st4 line-scroll" d="M67.5,22.7c27.3,0,49.4,22.9,49.4,51.1s-22.1,51.1-49.4,51.1c-11.6,0-22.3-4.2-30.8-11.1"/>
+                        </svg>
+                        <p class="">59% of B2B buyers prefer not to interact with humans via phone.</p>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <svg version="1.1" id="Layer_2" class="percentage-graph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 142 145.5" style="enable-background:new 0 0 142 145.5;" xml:space="preserve">
+                        <style type="text/css">
+                            .st5{fill:none;}
+                            .st6{font-family:'Lato-Regular';}
+                            .st7{font-size:25px;}
+                            .st8{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+                            .st9{fill:none;stroke:#EC6A2B;stroke-width:13;stroke-miterlimit:10;}
+                        </style>
+                        <rect x="14.6" y="15" class="st5" width="112.8" height="115.6"/>
+                        <text transform="matrix(1 0 0 1 42.5852 80.7317)" class="st6 st7">90%</text>
+                        <path class="st8" d="M117.2,72.9C117.2,100,95,122,67.7,122s-49.6-22-49.6-49.1c0-27.1,22.2-49.1,49.6-49.1
+                            C95,23.7,117.2,45.7,117.2,72.9z"/>
+                        <path class="st9 line-scroll" d="M67.7,23.7c27.4,0,49.6,22,49.6,49.1S95,122,67.7,122s-49.6-22-49.6-49.1c0-15.6,7.3-29.4,18.7-38.4"/>
+                        <rect x="11.6" y="16.9" class="st5" width="111.8" height="111.8"/>
+                        </svg>
+
+                        <p>90% of B2B buyers prefer to buy online when they have decided what to buy.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="Images/percentage-bg-dotted.svg" class="bg-rotate rotate-1">
+            <img src="Images/percentage-bg-dotted.svg" class="bg-rotate rotate-2">
+        </section>
+        <section class="background d-flex flex-align-items-center py-5">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <h2 class="text-uppercase">Adapt or Decline</h2>
+                        <div class="heading-underline mx-auto"></div>
+                        <p>Amazon business is taking more and more market share. They are now going after B2B.</p>
+                        <p>However as a reseller you have key differentiators and value add. Embracing the strategies listed below and moving to a modern selling strategy will enable you to improve customer experience and drives profitable growth.</p>
+                    </div>
+                    <div class="col-lg-6"><img src="Images/amazon-stock.svg" class=""></div>
+                </div>
+            </div>
+            <img src="Images/percentage-bg-arrow.svg" class="bg-arrow">
+        </section>
+        <section class="desktop-section desktop">
+            <div>
+                <div id="first">
+                  <div class="mt-md-5 py-md-5 text-center">
+                      <h1>The Principles Of Modern Selling</h1>
+                      <div class="heading-underline mx-auto"></div>
+                      <p>Stock in the channel have defined 7 keys principles you must adopt to become modern sellers.</p>
+                  </div>
+                </div>
+              
+                <div class="section-vertical" id="second">
+                    <div class="">
+                            <div class="block-list">
+                                    <div class="block-list-item odd-block dotted"><div class="block-list-item-inner">
+                                        <div class="position-absolute word-bg"><p>01</p></div>
+                                        <h3>Self-Service</h3>
+                                        <div class="heading-underline"></div>
+                                        <p>Digital natives and millennials don’t like talking on the phone. They want and expect to be able to perform routine tasks themselves, whilst interacting with as few people as possible.</p>
+                                        <p>Buyers have evolved, and their experiences at home, are shaping their expectations in the B2B world.</p>
+                                        <button class="btn btn-primary">See Features</button>
+                                    </div></div>
+                                    <div class="block-list-item dotted"><div class="block-list-item-inner">
+                                        <div class="position-absolute word-bg"><p>02</p></div>
+                                        <h3>Collaboration</h3>
+                                        <div class="heading-underline"></div>
+                                        <p>Sales as a side-by-side process, instead of head-on. Online spaces to work on projects and quotes that can be shared and amended in real time speed up the sales cycle.</p>
+                                        <p>Letting users go straight to chat, video or voice directly from your web page enables true working together.</p>
+                                        <button class="btn btn-primary">See Features</button>
+                                    </div></div>
+                                    <div class="block-list-item odd-block dotted"><div class="block-list-item-inner">
+                                        <div class="position-absolute word-bg"><p>03</p></div>
+                                        <h3>Self-Education</h3>
+                                        <div class="heading-underline"></div>
+                                        <p>Let them find out about your solutions on their terms. Expose price information early in the journey.</p>
+                                        <p>Provide wizards to guide them plus bundles and pre-set configurations for easier decision making.</p>
+                                        <button class="btn btn-primary">See Features</button>
+                                    </div></div>
+                                    <div class="block-list-item dotted"><div class="block-list-item-inner">
+                                        <div class="position-absolute word-bg"><p>04</p></div>
+                                        <h3>Personalisation</h3>
+                                        <div class="heading-underline"></div>
+                                        <p>To deliver a great experience, businesses must offer a unique, personalized journey by using their understanding of customers.</p>
+                                        <p>Offer custom catalogues and pricing, relevant add-on products and personalised offers.</p>
+                                        <button class="btn btn-primary">See Features</button>
+                                    </div></div>
+                                    <div class="block-list-item odd-block dotted"><div class="block-list-item-inner">
+                                        <div class="position-absolute word-bg"><p>05</p></div>
+                                        <h3>Transparency</h3>
+                                        <div class="heading-underline"></div>
+                                        <p>Above everything, build trust with consistent pricing and messages through all channels.</p>
+                                        <p>Communicate timelines instantly, explain your solutions simply and provide deep and accurate descriptions of your products and services.</p>
+                                        <button class="btn btn-primary">See Features</button>
+                                    </div></div>
+                                    <div class="block-list-item dotted"><div class="block-list-item-inner">
+                                        <div class="position-absolute word-bg"><p>06</p></div>
+                                        <h3>Automation</h3>
+                                        <div class="heading-underline"></div>
+                                        <p>Make key people more efficient, remove repetitive tasks, communicate electronically with your suppliers, automate service provision and delivery.</p>
+                                        <p>Synchronise information across systems giving you, your sales people and your customers access to what they need to know.</p>
+                                        <button class="btn btn-primary">See Features</button>
+                                    </div></div>
+                                    <div class="block-list-item odd-block dotted"><div class="block-list-item-inner">
+                                        <div class="position-absolute word-bg"><p>07</p></div>
+                                        <h3>Insight</h3>
+                                        <div class="heading-underline"></div>
+                                        <p>Using data analysis to spot patterns, opportunities or problems and to develop a deep understanding of customers.</p>
+                                        <p>Real-time insights allow you to reach out at just the right time to enable your sales goals.</p>
+                                        <button class="btn btn-primary">See Features</button>
+                                    </div></div>
+                                  </div>
+                    </div>
+                </div>
+              
+              
+                <div class="d-flex flex-align-items-center third">
+                  <div class="container text-center">
+                      <div class="row">
+                          <div class="col">
+                            <h1>Become A Modern Seller Is Hard</h1>
+                            <div class="heading-underline mx-auto"></div>
+                            <p>It is difficult to change to this new world. Our comprehensive toolset will enable you.</p>
+                            <p>To mention just one feature, collaborative quoting, think how much better your business would be if you had quotes and projects online - with shared spaces to add resources and details that can be edited in real time - with the sales people informed the customer is looking at the project and popping up chat, or even moving to video or voice directly from your web page.</p>
+                            <p>With just this, one of many tools, think how much more effective your sales process could become.</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="mobile container">
+            <div class="py-5 text-center row">
+                <div class="col">
+                    <h1>The Principles Of Modern Selling</h1>
+                    <div class="heading-underline mx-auto"></div>
+                    <p>Stock in the channel have defined 7 keys principles you must adopt to become modern sellers.</p>        
+                </div>
+            </div>
+            <div class="row blocks-mobile">
+                <div class="col-xs-12 col-sm-6 mb-5">
+                    <div class="position-absolute word-bg"><p>01</p></div>
+                    <h3>Self-Service</h3>
+                    <div class="heading-underline"></div>
+                    <p>Digital natives and millennials don’t like talking on the phone. They want and expect to be able to perform routine tasks themselves, whilst interacting with as few people as possible.</p>
+                    <p>Buyers have evolved, and their experiences at home, are shaping their expectations in the B2B world.</p>
+                    <button class="btn btn-primary">See Features</button>
+                </div>
+                <div class="col-xs-12 col-sm-6 mb-5">
+                    <div class="position-absolute word-bg"><p>02</p></div>
+                    <h3>Collaboration</h3>
+                    <div class="heading-underline"></div>
+                    <p>Sales as a side-by-side process, instead of head-on. Online spaces to work on projects and quotes that can be shared and amended in real time speed up the sales cycle.</p>
+                    <p>Letting users go straight to chat, video or voice directly from your web page enables true working together.</p>
+                    <button class="btn btn-primary">See Features</button>
+                </div>
+                <div class="col-xs-12 col-sm-6 mb-5">
+                    <div class="position-absolute word-bg"><p>03</p></div>
+                    <h3>Self-Education</h3>
+                    <div class="heading-underline"></div>
+                    <p>Let them find out about your solutions on their terms. Expose price information early in the journey.</p>
+                    <p>Provide wizards to guide them plus bundles and pre-set configurations for easier decision making.</p>
+                    <button class="btn btn-primary">See Features</button>
+                </div>
+                <div class="col-xs-12 col-sm-6 mb-5">
+                    <div class="position-absolute word-bg"><p>04</p></div>
+                    <h3>Personalisation</h3>
+                    <div class="heading-underline"></div>
+                    <p>To deliver a great experience, businesses must offer a unique, personalized journey by using their understanding of customers.</p>
+                    <p>Offer custom catalogues and pricing, relevant add-on products and personalised offers.</p>
+                    <button class="btn btn-primary">See Features</button>
+                </div>
+                <div class="col-xs-12 col-sm-6 mb-5">
+                    <div class="position-absolute word-bg"><p>05</p></div>
+                    <h3>Transparency</h3>
+                    <div class="heading-underline"></div>
+                    <p>Above everything, build trust with consistent pricing and messages through all channels.</p>
+                    <p>Communicate timelines instantly, explain your solutions simply and provide deep and accurate descriptions of your products and services.</p>
+                    <button class="btn btn-primary">See Features</button>
+                </div>
+                <div class="col-xs-12 col-sm-6 mb-5">
+                    <div class="position-absolute word-bg"><p>06</p></div>
+                    <h3>Automation</h3>
+                    <div class="heading-underline"></div>
+                    <p>Make key people more efficient, remove repetitive tasks, communicate electronically with your suppliers, automate service provision and delivery.</p>
+                    <p>Synchronise information across systems giving you, your sales people and your customers access to what they need to know.</p>
+                    <button class="btn btn-primary">See Features</button>
+                </div>
+                <div class="col-xs-12 col-sm-6 mb-5">
+                    <div class="position-absolute word-bg"><p>07</p></div>
+                    <h3>Insight</h3>
+                    <div class="heading-underline"></div>
+                    <p>Using data analysis to spot patterns, opportunities or problems and to develop a deep understanding of customers.</p>
+                    <p>Real-time insights allow you to reach out at just the right time to enable your sales goals.</p>
+                    <button class="btn btn-primary">See Features</button>
+                </div>
+            </div>
+        </section>
+        <section class="mobile third" id="#third">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1>Become A Modern Seller Is Hard</h1>
+                        <div class="heading-underline mx-auto"></div>
+                        <p>It is difficult to change to this new world. Our comprehensive toolset will enable you.</p>
+                        <p>To mention just one feature, collaborative quoting, think how much better your business would be if you had quotes and projects online - with shared spaces to add resources and details that can be edited in real time - with the sales people informed the customer is looking at the project and popping up chat, or even moving to video or voice directly from your web page.</p>
+                        <p>With just this, one of many tools, think how much more effective your sales process could become.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="background d-flex flex-align-items-center world-bg">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6 text-white">
+                        <h2>Stock In The Channel - Used By Over 20,000 IT Resellers</h2>
+                        <div class="heading-underline mx-auto"></div>
+                        <p>We run demos, webinars and have resources to help you evaluate our offer and more than that we would love to meet you.</p>
+                        <div><i class="material-icons text-white mr-3">email</i><a class="text-white" href="mailto:sales@stockinthechannel.co.uk" target="_blank">sales@stockinthechannel.co.uk</a></div>
+                        <div><i class="material-icons text-white mr-3">phone</i><a class="text-white" href="tel:03337720333" target="_blank">0333 772 0333</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="client-logo my-4">
+            <div class="container">
+                <div class="row py-0">
+                    <div class="col"><img src="Images/logo-daisy.png"></div>
+                    <div class="col"><img src="Images/logo-sbl.png"></div>
+                    <div class="col"><img src="Images/logo-vohkus.png"></div>
+                    <div class="col"><img src="Images/logo-zones.png"></div>
+                    <div class="col"><img src="Images/logo-PCM.png"></div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <script src="Scripts/horizontal scroll.js"></script>
+    <script src="Scripts/animation.js"></script>
+    <footer class="footer">
+        <div class="d-flex flex-justify-content-space-between footer-top">
+            <div class="footer-logo-section px-4 pb-4">
+                <div><img src="Images/SITC-Logo-white.svg" class="d-block mx-auto"></div>
+                <div class="social-media-container mx-auto">
+                    <a href="https://accounts.stockinthechannel.co.uk/Account/Register" target="_blank" class="social-media-icon login">
+                        <span class="off-screen">
+                            Link to Stock in the Channel Register Page, opens in a new tab.
+                        </span>
+                    </a>
+                    <a href="https://twitter.com/stockinchannel" target="_blank" class="social-media-icon twitter">
+                        <span class="off-screen">
+                            Link to Stock in the Channel twitter Page, opens in a new tab.
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/stock-in-the-channel" target="_blank" class="social-media-icon linkedin">
+                        <span class="off-screen">
+                            Link to Stock in the Channel linkedin Page, opens in a new tab.
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-direction-column footer-contact mx-auto pb-4 px-4">
+                <p>Contact</p>
+                <div class="contact-link"><i class="material-icons"> phone</i><a href="tel:+443337720333" target="_blank">+44 333 772 0003</a></div>
+                <div class="contact-link"><i class="material-icons"> email</i><a href="mailto:sales@stockinthechannel.com" target="_blank">sales@stockinthechannel.com</a></div>
+                <div class="contact-link"><i class="material-icons"> apartment</i><a href="https://goo.gl/maps/8UW3zeyj5cN82qHw9" target="_blank">14 Heddon St, Mayfair, London W1B 4DA</a></div>
+            </div>
+        </div>
+        <div class="d-flex flex-align-items-center flex-justify-content-center footer-links px-4 pb-4">
+            <a href="#">Privacy</a>
+            <p class="desktop">|</p>
+            <a href="#">Ts & Cs</a>
+            <p class="desktop">|</p>
+            <a href="#"> Advertise</a>
+            <p class="desktop">|</p>
+            <a href="#">List your stock</a>
+            <p class="desktop">|</p>
+            <a href="#">Contact</a>
+            <p class="desktop">|</p>
+            <p>© 2019 Stock in the Channel All rights reserved</p>
+        </div>
+    </footer>
+    
+  </body>
+</html>

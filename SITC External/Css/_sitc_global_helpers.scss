@@ -1,0 +1,99 @@
+﻿@import 'sitc_global_vars';
+
+@mixin fontReset() {
+    font: normal 13px/1.3 'Open Sans', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@mixin break($point) {
+    @media only screen and (min-width: $point) { @content; }
+}
+@mixin breakMax($point) {
+    @media only screen and (max-width: $point - 1) { @content; }
+}
+
+@mixin min-height-min-content() {
+    min-height: -moz-min-content;
+    min-height: -webkit-min-content;
+    min-height: min-content;
+}
+
+@mixin down-arrow() {
+    &:after {
+        content: '';
+        background-repeat: no-repeat;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjZCRjRGNzQyQUEzQjExRTFCRTJFOEQ2MDQxOURBNTREIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjZCRjRGNzQzQUEzQjExRTFCRTJFOEQ2MDQxOURBNTREIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NkJGNEY3NDBBQTNCMTFFMUJFMkU4RDYwNDE5REE1NEQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NkJGNEY3NDFBQTNCMTFFMUJFMkU4RDYwNDE5REE1NEQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4Zj6AyAAAAlElEQVR42mLs7e31ZmBg2MKAHfwFYhOG////MwAVbjl9+vR/ZHDw4MH/QPFpIHkmqI7cQ4cOffn8+TOY8/TpU4YzZ848BTLLQHywoqKiovtAqvXs2bNgRRcvXgRRZUDxLyAGC5L9fefOnUvm5eVVuXHjxj6ggmUwCZh1INN+AalEoFtAdDqK80EOQ8ZAx9qjiwEEGAASFmFY2lXJawAAAABJRU5ErkJggg==') /*/Content/Images/pointer-header-nav.png*/;
+        background-position: center right;
+        padding: 6px;
+    }
+}
+
+@mixin border-card-shadow() {
+    border-radius: 1px;
+    border: 1px solid $color-borderLight;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@mixin self-close-float() {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin bodyAutoMargin() {
+    padding-left: $bodyMargin-minimal;
+    padding-right: $bodyMargin-minimal;
+
+    @include break($bp-small) {
+        padding-left: $bodyMargin-narrow;
+        padding-right: $bodyMargin-narrow;
+    }
+
+    @include break($bp-standard) {
+        padding-left: $bodyMargin-standard;
+        padding-right: $bodyMargin-standard;
+        //@if $bodyMargin-standard != $bodyMargin-wall-standard {
+            body.wallpaper & {
+                padding-left: $bodyMargin-wall-standard;
+                padding-right: $bodyMargin-wall-standard;
+            }
+        //}
+    }
+
+    @include break($bp-xlarge) {
+        padding-left: $bodyMargin-wide;
+        padding-right: $bodyMargin-wide;
+        //@if $bodyMargin-wide != $bodyMargin-wall-wide {
+            body.wallpaper & {
+                padding-left: $bodyMargin-wall-wide;
+                padding-right: $bodyMargin-wall-wide;
+            }
+        //}
+    }
+}
+@mixin bodyAutoMargin_Search() {
+    right: $bodyMargin-minimal;
+
+    @include break($bp-small) {
+        right: $bodyMargin-narrow;
+    }
+
+    @include break($bp-standard) {
+        right: $bodyMargin-standard;
+        @if $bodyMargin-standard != $bodyMargin-wall-standard {
+            body.wallpaper & {
+                right: $bodyMargin-wall-standard;
+            }
+        }
+    }
+
+    @include break($bp-xlarge) {
+        right: $bodyMargin-wide;
+        @if $bodyMargin-wide != $bodyMargin-wall-wide {
+            body.wallpaper & {
+                right: $bodyMargin-wall-wide;
+            }
+        }
+    }
+}
